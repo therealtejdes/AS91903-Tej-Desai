@@ -1,0 +1,143 @@
+#homepage{
+    background-image: url('../images/pexels-cottonbro-7690454.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;}
+
+footer{
+    width: 100%;
+    margin: 0;
+    background: linear-gradient(to right, #0000ff, #ff0000);
+    font-family: 'Oswald', sans-serif;
+    border-top: 2px solid #272c76;
+    color: white;
+    font-size: 25px;
+    padding: 20px 0;
+    text-align: center;}
+
+#gymlogo{
+    width: 400px; 
+    height: auto;}
+
+#headerlinks{
+    color: white;
+    float: right;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px; 
+    text-align: center;
+    margin-right: 20%}
+
+nav li a{
+    color: white;
+    font-family: sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
+    background: linear-gradient(135deg, #000000, #ff0000); 
+    border-radius: 4px;}
+    
+nav li {
+    display:inline-block;}
+
+.nav-li a:hover{
+    background: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-decoration: underline}
+
+h1{ 
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    margin-bottom: 70px;
+    text-align: center;}
+
+#h2paragraph{
+    color: white;
+    font-family: 'Oswald', sanserif;
+    font-size: 50px;
+    margin-top: 200px;
+    margin-bottom: auto;
+    text-align: center;}
+
+#membershippage{
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg, #111a2e 0%,#2c4366 25%, #aa192d 60%, #f4a88f 100%);
+  background-attachment: fixed;}
+
+#gallerypage{
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg, #111a2e 0%,#2c4366 25%, #aa192d 60%, #f4a88f 100% );
+  background-attachment: fixed;}
+
+#contactpage{
+  background-attachment: fixed; /* so that the wallpaper is covering the entire screen */
+  background: linear-gradient(135deg, #111a2e 0%,#2c4366 25%, #aa192d 60%, #f4a88f 100% );
+  margin: 0;
+  min-height: 100vh; /* so that the color gradient doesn't get cut off or repeat itself*/}
+
+#galleryheader{
+    color: white;
+    font-family:'Oswald', sans-serif;
+    font-size: 50px;
+    text-align: right;}
+
+#gallery_photos{
+    color: white;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 20px;
+    text-align: center;}
+
+.gallery-thumb {
+    width: 250px;       
+    height: 200px;      
+    object-fit: cover;  
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: transform 0.2s ease;}
+
+.gallery-thumb:hover {
+    transform: scale(1.03)}
+
+.contactheader1{
+    color: white;
+    font-family: 'Oswald'sans-serif;
+    margin-bottom: 50px;
+}
+.contactheader2{
+    color: white;
+    font-family: 'Oswald'sans-serif;
+    margin-bottom: 50px;
+}
+.contact-paragraph{
+    color: white;  
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+}
+.contact-paragraph2{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+.contact-paragraph3{
+    color: white;
+    font-family: 'Oswald', sans-serif serif;
+    font-size: 30px;
+    margin-top: 30px;
+    text-align: center;
+}

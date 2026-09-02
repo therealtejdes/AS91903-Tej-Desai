@@ -8,13 +8,14 @@
 footer{
     width: 100%;
     margin: 0;
-    background: linear-gradient(to right, #0000ff, #ff0000);
+    background: linear-gradient(to right, #0000ff, #ff0000,#2c4366);
     font-family: 'Oswald', sans-serif;
     border-top: 2px solid #272c76;
     color: white;
     font-size: 25px;
     padding: 20px 0;
-    text-align: center;}
+    text-align: center;
+    border: 5px, solid, black}
 
 #gymlogo{
     width: 400px; 
@@ -25,8 +26,8 @@ footer{
     float: right;
     font-family: 'Oswald', sans-serif;
     font-size: 25px;
-    padding-left: 20px;
-    padding-right: 20px; 
+    padding-left: 40px;
+    padding-right: 40px; 
     text-align: center;
     margin-right: 20%}
 
@@ -36,7 +37,17 @@ nav li a{
     padding: 14px 16px;
     text-decoration: none;
     background: linear-gradient(135deg, #000000, #ff0000); 
-    border-radius: 4px;}
+    border-radius: 4px;
+    border: 5px, solid, black;
+    position: relative;
+    right: 180px}
+
+nav ul {
+    display: flex;
+    gap: 10px; 
+    list-style: none;
+    padding: 0;
+    margin: 0;}
     
 nav li {
     display:inline-block;}
@@ -49,6 +60,7 @@ nav li {
     color: transparent;
     text-decoration: underline}
 
+
 h1{ 
     color:white;
     font-family: 'Oswald', sans-serif;
@@ -58,7 +70,7 @@ h1{
 
 #h2paragraph{
     color: white;
-    font-family: 'Oswald', sanserif;
+    font-family: 'Oswald', sans-serif;
     font-size: 50px;
     margin-top: 200px;
     margin-bottom: auto;
@@ -85,10 +97,14 @@ h1{
   min-height: 100vh; /* so that the color gradient doesn't get cut off or repeat itself*/}
 
 #galleryheader{
+    display: block;
+    clear: both;
+    width: 100%;
     color: white;
-    font-family:'Oswald', sans-serif;
-    font-size: 50px;
-    text-align: right;}
+    font-family: 'Oswald',sans-serif;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;}
 
 #gallery_photos{
     color: white;
@@ -96,37 +112,29 @@ h1{
     margin-left: 10px;
     margin-right: 10px;
     padding-top: 20px;
-    text-align: center;}
+    text-align: center;
+}
 
 .gallery-thumb {
     width: 250px;       
     height: 200px;      
     object-fit: cover;  
     border-radius: 10px; 
+    border: 10px solid, black;
     cursor: pointer;
     transition: transform 0.2s ease;}
 
 .gallery-thumb:hover {
     transform: scale(1.03)}
 
-.contactheader1{
+.contactheader{
+    font-size: 80px;
     color: white;
-    font-family: 'Oswald'sans-serif;
-    margin-bottom: 50px;
-}
-.contactheader2{
-    color: white;
-    font-family: 'Oswald'sans-serif;
-    margin-bottom: 50px;
+    font-family: 'Oswald',sans-serif;
+    margin-bottom: 40px;
+    text-align: center;
 }
 .contact-paragraph{
-    color: white;  
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    font-weight: lighter;
-    font-size: 30px;
-}
-.contact-paragraph2{
     color: white;
     font-family: 'Oswald', sans-serif;
     font-weight: lighter;
@@ -134,10 +142,26 @@ h1{
     margin-top: 30px;
     text-align: center;
 }
-.contact-paragraph3{
-    color: white;
-    font-family: 'Oswald', sans-serif serif;
-    font-size: 30px;
-    margin-top: 30px;
+
+#contactlink{
+    margin-right: 30px;
     text-align: center;
+    text-decoration: none;
+}
+.membership{
+    border: 5px black solid;
+    background: linear-gradient(red, blue);
+    border-radius: 20px;
+    position: relative;
+    bottom: 10px;
+    left: 20px;
+    color: white;
+    font-size: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+.membership:hover{
+    text-decoration: underline;
 }

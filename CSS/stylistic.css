@@ -16,7 +16,7 @@
     clear: both;
     color: white;
     display: block;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif; /* the font for my css*/
     margin-bottom: 80px;
     margin-top: 80px;
     font-size: 80px;
@@ -24,6 +24,7 @@
     }
 
 #gallery-page{
+    /* linear gradient background*/
     background: linear-gradient(135deg, #111a2e 0%, #2c4366 25%, #aa192d 60%, #f4a88f 100%);
     background-attachment: fixed;
     margin: 0;
@@ -35,9 +36,11 @@
     margin-left: 10px;
     margin-right: 10px;
     padding-top: 20px;
+    /* aligns the photos in the center of the screen*/
     text-align: center}
 
 #gym-logo{
+    /* positioned only at the top left of the home page*/
     height: auto;
     width: 400px}
 
@@ -61,6 +64,7 @@
 
 #home-page{
     background-attachment: fixed;
+    /* png background image*/
     background-image: url('../images/pexels-cottonbro-7690454.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -123,7 +127,7 @@
     font-size: 80px;
     margin-bottom: 40px;
     text-align: center;
-    width: 100%}
+}
 
 .contact-paragraph{
     color: white;
@@ -198,6 +202,7 @@ h1{color: white;
     cursor: pointer /* done to improve usability*/}
 
 .membership:hover{
+    /* when user hovers over, button is underlined*/
     text-decoration: underline}
 
 .membership-card{
@@ -205,7 +210,9 @@ h1{color: white;
     flex: 1}
 
 .membership-flex {
+    /* displays the membership 1x3*/
     display: flex;
+    /* the gap makes each membership distinguished*/
     gap: 30px;
     justify-content: space-between;
     padding: 0 40px}
@@ -229,13 +236,16 @@ h1{color: white;
     width: 100%}
 
 nav li {
+    /* arranges the links at the top of the screen*/
     display: inline-block}
 
 nav li a {
+    /* background color for the header links*/
     background: linear-gradient(135deg, #000000, blue);
     border: 5px solid black;
-    border-radius: 4px;
+    border-radius: 10px;
     color: white;
+    /* displays at the top of the screen*/
     display: inline-block;
     font-family: sans-serif;
     margin-right: 80px;
@@ -244,6 +254,7 @@ nav li a {
     text-decoration: none}
 
 nav ul {
+    /* arranges the header links 1x4*/
     display: flex;
     gap: 10px;
     list-style: none;
@@ -252,15 +263,20 @@ nav ul {
 
 .nav-li a:hover {
     -webkit-background-clip: text;
+    /* ensures that only the background, not the text is gradient color*/
     -webkit-text-fill-color: transparent;
+    /* background color is erased to indicate the user what link they are hovering on*/
     background: white;
     background-clip: text;
     color: transparent;
+    /* indicates to the user that the links are actually being hovered over*/
     text-decoration: underline}
 
 footer{
+    /* footer background color*/
     background: linear-gradient(to right, #0000ff, #ff0000, #2c4366);
-    border-top: 2px solid #272c76;
+    border: 10px solid black;
+    border-radius: 10px;
     color: white;
     font-family: 'Oswald', sans-serif;
     font-size: 40px;

@@ -1,37 +1,20 @@
 /* css file */
 /* Its in ordered alphabetically (from classes to ids) */
-/* classes start here*/
-#contact-link{
+/* id's start here*/
+#contact-link {
     margin-right: 30px;
     text-align: center;
     text-decoration: none}
 
-#contact-page{
-    background: linear-gradient(135deg, #111a2e 0%, #2c4366 25%, #aa192d 60%, #f4a88f 100%);
+/* rmeoving repetitive code, backgorund color for all 3 pages*/
+#contact-page, #gallery-page, #membership-page {
+    background: linear-gradient(135deg, #111a2e 0%,
+     #2c4366 25%, #aa192d 60%, #f4a88f 100%);
     background-attachment: fixed;
     margin: 0;
     min-height: 100vh}
 
-#gallery-header{
-    clear: both;
-    color: white;
-    display: block;
-    font-family: 'Oswald', sans-serif; /* the font for my css*/
-    margin-bottom: 80px;
-    margin-top: 80px;
-    font-size: 80px;
-    text-align: center;
-    }
-
-#gallery-page{
-    /* linear gradient background*/
-    background: linear-gradient(135deg, #111a2e 0%, #2c4366 25%, #aa192d 60%, #f4a88f 100%);
-    background-attachment: fixed;
-    margin: 0;
-    min-height: 100vh}
-
-#gallery_photos{
-    color: white;
+#gallery-photos {
     font-size: 40px;
     margin-left: 10px;
     margin-right: 10px;
@@ -39,60 +22,45 @@
     /* aligns the photos in the center of the screen*/
     text-align: center}
 
-#gym-logo{
+#gym-logo {
     /* positioned only at the top left of the home page*/
     height: auto;
     width: 400px}
 
-#h2paragraph{
-    color: white;
-    font-family: 'Oswald', sans-serif;
+#h2-paragraph {
     font-size: 50px;
     margin-bottom: auto;
     margin-top: 200px;
     text-align: center}
 
-#header-links{
-    color: white;
-    float: right;
+#header-links {
     font-family: 'Oswald', sans-serif;
     font-size: 25px;
-    margin-right: 20%;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 100%;
+    padding: 0;
     text-align: center}
 
-#home-page{
+#home-page {
     background-attachment: fixed;
     /* png background image*/
-    background-image: url('../images/pexels-cottonbro-7690454.jpg');
+    background-image: 
+    url('../images/pexels-cottonbro-7690454.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover}
 
-#membership-page{
-    background: linear-gradient(135deg, #111a2e 0%, #2c4366 25%, #aa192d 60%, #f4a88f 100%);
-    background-attachment: fixed;
-    margin: 0;
-    min-height: 100vh}
-
-/* ids start here*/
-
+/* classes start here*/
 .advanced-header {
     border: 10px solid blue;
     border-radius: 20px;
-    color: white;
-    font-family: 'Oswald', sans-serif;
     font-size: 35px;
     margin-bottom: 40px;
     padding-right: 25px;
     text-align: center}
 
-.advanced-paragraph{
-    border: 10px solid blue;
+.advanced-paragraph {
+    border: 10px solid blue; /* radius helps to distinguish each membership*/
     border-radius: 5px;
-    color: white;
-    font-family: 'Oswald', sans-serif;
     font-size: 25px;
     margin-top: 30px;
     padding-right: 20px;
@@ -101,8 +69,6 @@
 .beginner-header {
     border: 10px solid blue;
     border-radius: 20px;
-    color: white;
-    font-family: 'Oswald', sans-serif;
     font-size: 35px;
     margin-bottom: 40px;
     padding-left: 15px;
@@ -111,44 +77,31 @@
 .beginner-paragraph {
     border: 10px solid blue;
     border-radius: 5px;
-    color: white;
-    font-family: 'Oswald', sans-serif;
     font-size: 25px;
     margin-top: 30px;
     padding-left: 25px;
     text-align: center}
 
-.contact-header{
+/* other 3 pages have the same type of headers*/
+.contact-header, .membership-header, .gallery-header {
     border-radius: 20px;
     clear: both;
-    color: white;
     display: block;
-    font-family: 'Oswald', sans-serif;
     font-size: 80px;
     margin-bottom: 40px;
-    text-align: center;
-}
+    text-align: center}
 
-.contact-paragraph{
-    color: white;
+.contact-paragraph {
     border: solid 10px blue;
     border-radius: 20px;
-    font-family: 'Oswald', sans-serif;
     font-size: 30px;
     margin-top: 30px;
     text-align: center}
 
-.gallery-paragraph{
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    font-size: 50px;
-    font-weight: lighter;
-    margin-top: 30px;
-    text-align: center}
-
+/* images used within the website*/
 .gallery-thumb {
     /* so that the images have a distinct outline*/
-    border: 15px solid blue;
+    border: 7px solid blue;
     border-radius: 10px;
     /* gives feedback to the user that the image can be clicked*/
     cursor: pointer;
@@ -160,13 +113,6 @@
 
 .gallery-thumb:hover {
     transform: scale(1.03)} /* allows for "effect" when image is hovered over*/
-
-h1{
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    font-size: 60px;
-    margin-bottom: 70px;
-    text-align: center}
 
 .intermediate-header {
     border: 10px solid blue;
@@ -189,12 +135,12 @@ h1{
     text-align: center}
 
 .membership {
+    /* gradient background, different from webpage background*/
     background: linear-gradient(red, blue);
     border: 10px solid black;
     border-radius: 20px;
-    color: white; /* color pops out on screen*/
+    color: white;
     display: inline-block; /* centers the button in the middle*/
-    font-family: 'Oswald', sans-serif; /* consistancy with website fonts*/
     font-size: 100px; /* so that its large and pops out to the user*/
     left: 20px;
     margin: 20px;
@@ -203,13 +149,13 @@ h1{
     position: relative;
     text-align: center;
     text-decoration: none;
-    cursor: pointer /* done to improve usability*/}
+    cursor: pointer}/* done to improve usability*/
 
-.membership:hover{
+.membership:hover {
     /* when user hovers over, button is underlined*/
     text-decoration: underline}
 
-.membership-card{
+.membership-card {
     border-radius: 4px; /* makes the box rounded*/
     flex: 1}
 
@@ -221,23 +167,10 @@ h1{
     justify-content: space-between;
     padding: 0 40px}
 
-.membership-paragraph {
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    font-size: 30px;
-    font-weight: lighter;
+.sub-text {
+    font-size: 50px;
     margin-top: 30px;
     text-align: center}
-
-.membership-header {
-    clear: both;
-    color: white;
-    display: block;
-    font-family: 'Oswald', sans-serif;
-    font-size: 80px;
-    margin-bottom: 40px;
-    text-align: center;
-    width: 100%}
 
 nav li {
     /* arranges the links at the top of the screen*/
@@ -245,22 +178,24 @@ nav li {
 
 nav li a {
     /* background color for the header links*/
-    background: linear-gradient(135deg, #000000, blue);
+    background: linear-gradient(135deg,
+     #000000, blue);
     border: 5px solid black;
     border-radius: 10px;
     color: white;
     /* displays at the top of the screen*/
     display: inline-block;
     font-family: sans-serif;
-    margin-right: 80px;
     padding: 14px 16px;
     text-align: center;
-    text-decoration: none}
+    text-decoration:underline}
 
 nav ul {
     /* arranges the header links 1x4*/
     display: flex;
-    gap: 10px;
+    justify-content: center; /* Forces the links to the middle */
+    align-items: center;
+    gap: 70px; /* spacing in uniform */
     list-style: none;
     margin: 0;
     padding: 0}
@@ -276,17 +211,33 @@ nav ul {
     /* indicates to the user that the links are actually being hovered over*/
     text-decoration: underline}
 
-footer{
+.sub-text {
+    font-size: 40px;
+    margin-top: 30px;
+    text-align: center}
+
+/* non classes/ids*/
+
+body {
+    color: white; /* consistant website color*/
+    font-family: 'Oswald', sans-serif}/* consistant website font*/
+footer {
     /* footer background color*/
-    background: linear-gradient(to right, #0000ff, #ff0000, #2c4366);
+    background: linear-gradient(to right, #0000ff,
+     #ff0000, #2c4366);
     /* helps to separate it from the rest of the elements on screen*/
     border: 10px solid black;
     border-radius: 10px;
     /* color of the font is in line with the rest of the page*/
-    color: white;
-    font-family: 'Oswald', sans-serif;
+    clear: both;
     font-size: 40px;
     margin: 0;
     padding: 20px 0;
     text-align: center;
     width: 100%}
+
+/* header reserved for only the home page*/
+h1 {
+    font-size: 60px;
+    margin-bottom: 70px;
+    text-align: center}

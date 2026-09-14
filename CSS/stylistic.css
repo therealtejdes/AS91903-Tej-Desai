@@ -24,25 +24,30 @@
 
 #gym-logo {
     /* positioned only at the top left of the home page*/
+    float: left;
     height: auto;
+    margin-left: 20px;
     width: 400px}
 
 #h2-paragraph {
+    clear: both; /* so that text is automatically brougth down*/
     font-size: 50px;
     margin-bottom: auto;
-    margin-top: 200px;
+    margin-top: 20px;
     text-align: center}
 
 #header-links {
     font-family: 'Oswald', sans-serif;
     font-size: 25px;
     width: 100%;
-    padding: 0;
+    padding-top: 10px;
+    margin-top: 40;
     text-align: center}
+
 
 #home-page {
     background-attachment: fixed;
-    /* png background image*/
+    /* jpg background image*/
     background-image: 
     url('../images/pexels-cottonbro-7690454.jpg');
     background-position: center;
@@ -117,8 +122,6 @@
 .intermediate-header {
     border: 10px solid blue;
     border-radius: 20px;
-    color: white;
-    font-family: 'Oswald', sans-serif;
     font-size: 35px;
     margin-bottom: 40px;
     padding-left: 15px;
@@ -127,8 +130,6 @@
 .intermediate-paragraph {
     border: 10px solid blue;
     border-radius: 10px;
-    color: white;
-    font-family: 'Oswald', sans-serif;
     font-size: 25px;
     margin-top: 30px;
     padding-left: 25px;
@@ -221,6 +222,7 @@ nav ul {
 body {
     color: white; /* consistant website color*/
     font-family: 'Oswald', sans-serif}/* consistant website font*/
+
 footer {
     /* footer background color*/
     background: linear-gradient(to right, #0000ff,
@@ -238,6 +240,7 @@ footer {
 
 /* header reserved for only the home page*/
 h1 {
+    clear: both;
     font-size: 60px;
     margin-bottom: 70px;
-    text-align: center}
+    text-align: center;}

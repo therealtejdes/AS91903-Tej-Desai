@@ -22,6 +22,7 @@
     /* aligns the photos in the center of the screen*/
     text-align: center}
 
+/* intellactual property for the logo*/
 #gym-logo {
     /* positioned only at the top left of the home page*/
     float: left;
@@ -36,15 +37,16 @@
     margin-top: 20px;
     text-align: center}
 
+/* the navigation bar for the website*/
 #header-links {
     font-family: 'Oswald', sans-serif;
     font-size: 25px;
     width: 100%;
     padding-top: 10px;
-    margin-top: 40;
-    text-align: center}
+    margin-top: 40px;
+    text-align: center;}
 
-
+/* boackground for the body of the home page*/
 #home-page {
     background-attachment: fixed;
     /* jpg background image*/
@@ -69,7 +71,7 @@
     font-size: 25px;
     margin-top: 30px;
     padding-right: 20px;
-    text-align: center}
+    text-align: center} /* the text is centered in the middle of the screen*/
 
 .beginner-header {
     border: 10px solid blue;
@@ -101,7 +103,7 @@
     border-radius: 20px;
     font-size: 30px;
     margin-top: 30px;
-    text-align: center}
+    text-align: center} /* text is aligned within the center*/
 
 /* images used within the website*/
 .gallery-thumb {
@@ -221,7 +223,11 @@ nav ul {
 
 body {
     color: white; /* consistant website color*/
-    font-family: 'Oswald', sans-serif}/* consistant website font*/
+    font-family: 'Oswald', sans-serif;/* consistant website font*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;}
 
 footer {
     /* footer background color*/
@@ -233,6 +239,7 @@ footer {
     /* color of the font is in line with the rest of the page*/
     clear: both;
     font-size: 40px;
+    flex: 1;
     margin: 0;
     padding: 20px 0;
     text-align: center;
@@ -241,6 +248,50 @@ footer {
 /* header reserved for only the home page*/
 h1 {
     clear: both;
-    font-size: 60px;
+    font-size: 90px;
     margin-bottom: 70px;
-    text-align: center;}
+    text-align: center}
+
+/* in order to make the form a "modal form"*/
+
+iframe{
+  width: 100%; /*Overrides style set in embedded HTML - so that form fills the modal window*/
+}
+
+#modal {
+  position: fixed;
+  font-family: 'Oswald', sans-serif; /* keeping font styles consistant*/
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  height: 100%;
+  width: 100%;
+}
+
+.modalcontent {
+  position: absolute;
+  top: 0; 
+  left: 50%; /*This rule and the transform rule below centres the form horizontally on the page*/
+  transform: translate(-50%, 0);
+  background: #fff;
+  width: 85%;
+  padding: 10px;
+}
+
+/*Adjustments for wide screen*/
+@media (min-width: 1440px) {
+  .modalcontent{
+    top: 50%; /*This rule and the transform rule below centres the form vertically and horizontally on the page*/
+    transform: translate(-50%,-50%);
+    width: 45%;
+  }
+}
+
+.container {
+width: 100vw;
+height: 100vh;
+position: relative;
+transition: all 0.3s; /*Added so that transition between 'views' is smooth*/
+z-index: 999; /*z-index ensures menu sits on top of everything else*/
+}

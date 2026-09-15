@@ -5,7 +5,9 @@
             <meta charset="UTF-8">
             <meta name="Contact Page" content="Contact Information">
             <title>Contact Page</title>
-            <link rel="stylesheet" href="CSS/stylistic.css"> <!--Links back to my CSS file-->
+            <link rel="stylesheet" href="css/normalize.css"> <!--Links back to my CSS file-->
+            <link rel="stylesheet" href="css/stylistic.css"> <!--Links back to my CSS file-->
+            <script src="scripts/modal.js" defer> </script> <!--Modal form-->
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -61,6 +63,15 @@
             <div id="contact-link">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIaT9CjADHG_aiAExO3jBAOUi5Ly9XxLI6PgAB2r7ZdiwZIg/viewform", 
                 class="membership">JOIN US</a>
+            </div>
+
+            <!--My modal form -->
+            <div class="container">
+                <div id="modal">
+                 <div class="modalcontent">
+                <button id="button">X</button> <!--so that the user can escape the webpage if need be-->
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfIaT9CjADHG_aiAExO3jBAOUi5Ly9XxLI6PgAB2r7ZdiwZIg/viewform" width="640" height="717" frameborder="0" marginheight="0" marginwidth="50">Loading…</iframe>
+             </div>
             </div>
         <!--contact link for the user if they would like to join the gym-->
         <!--the link will send the user to the google form to sign up to the gym-->
